@@ -3,7 +3,7 @@ import './globals.css'
 
 const spartan = LeagueSpartan({
   subsets: ['latin'],
-  variable: ['--font-sparta'],
+  variable: ['--font-spartan'],
   weight: ['400', '500', '700'],
 })
 
