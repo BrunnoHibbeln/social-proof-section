@@ -19,6 +19,17 @@ module.exports = {
         'light-magenta': 'hsl(300, 24%, 96%)',
         pink: 'hsl(333, 80%, 67%)',
       },
+      backgroundImage: {
+        mobile: [
+          'url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg)',
+        ],
+        desktop: [
+          'url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg)',
+        ],
+      },
+      backgroundPosition: {
+        pattern: 'top, bottom',
+      },
     },
   },
   plugins: [],
