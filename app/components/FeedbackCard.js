@@ -1,18 +1,18 @@
 import Image from 'next/image'
 
-export default function FeedbackCard({ margin, image, name, text }) {
+export default function FeedbackCard({ margin, image, alt, name, text }) {
   return (
     <section
-      className={`flex flex-col gap-8 rounded-xl bg-dark-magenta p-8 xl:h-80 xl:w-[31rem] xl:p-12 ${margin}`}
+      className={`flex flex-col gap-5 rounded-xl bg-dark-magenta p-8 xl:h-fit xl:w-[31.5rem] ${margin}`}
     >
       <section className="flex flex-row gap-5">
-        <Image className="w-14 rounded-full" src={image} alt="Colton's Photo" />
+        <Image className="h-10 w-10 rounded-full" src={image} alt={alt} />
         <article className="flex flex-col items-center justify-center">
-          <strong className="text-light-magenta xl:text-lg">{name}</strong>
-          <span className="text-pink xl:text-lg">Verified Buyer</span>
+          <strong className="text-light-magenta">{name}</strong>
+          <span className="text-pink">Verified Buyer</span>
         </article>
       </section>
-      <p className="text-body font-bold text-light-magenta xl:text-lg">
+      <p className="text-body font-medium tracking-tighter text-light-magenta">
         “ {text} ”
       </p>
     </section>
