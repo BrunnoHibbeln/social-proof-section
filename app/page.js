@@ -8,7 +8,7 @@ import Irene from './images/image-irene.jpg'
 
 export default function Home() {
   return (
-    <main className="bg-mobile xl:bg-desktop bg-pattern flex flex-col items-center justify-center gap-16 bg-white bg-no-repeat px-8 py-16 duration-300 md:px-44 xl:grid xl:grid-cols-2 xl:grid-rows-2 xl:px-32">
+    <main className="flex flex-col items-center justify-center gap-16 bg-white bg-mobile bg-pattern bg-no-repeat px-8 py-16 duration-300 md:px-44 xl:grid xl:grid-cols-2 xl:grid-rows-2 xl:bg-desktop xl:px-32">
       <section className="flex xl:items-center xl:justify-start">
         <TitleCard />
       </section>
